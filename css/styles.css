@@ -70,9 +70,51 @@ a {
 	border-bottom: black 1px solid;
 }
 
-.topnav-toggle_button {
+/*  *****
+ * Three-bar menu button
+ * ******/
+.toggleMenuButton{
 	display: none;
+  	cursor: pointer;
 }
+
+.toggleMenuButton span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+    
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.active.toggleMenuButton span:nth-child(1)
+{
+  	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  	transform: rotate(-45deg) translate(-3px, 6px) ;
+}
+
+.active.toggleMenuButton span:nth-child(2)
+{
+  	transform-origin: 0% 100%;
+	opacity: 0;
+}
+
+.active.toggleMenuButton span:nth-child(3)
+{
+  	-webkit-transform: rotate(45deg) translate(-8px, -10px) ;
+  	transform: rotate(45deg) translate(-8px, -10px) ;
+}
+
+
 
 @media screen and (max-width : 650px) {
 	.h1 {
@@ -90,10 +132,11 @@ a {
 		display: flex;
 	}
 	
-	.topnav-toggle_button {
-		display: flex;
+	.toggleMenuButton {
+		display: inline-block;
 		float: right
 	}
+	
 }
 
 
@@ -124,3 +167,13 @@ h1 {
 }
 
 
+
+.notSelectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
