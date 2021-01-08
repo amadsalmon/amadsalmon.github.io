@@ -1,3 +1,7 @@
+/* ======================
+		GENERAL
+====================== */
+
 html {
     font-size: 18px;
     scroll-behavior: smooth;
@@ -15,6 +19,14 @@ body {
 a {
 	color: black;
 }
+
+
+
+
+
+/* ======================
+	TOP NAVIGATION BAR
+====================== */
 
 /* Style the top navigation */
 .topnav {
@@ -58,6 +70,14 @@ a {
 	border-bottom: black 1px solid;
 }
 
+
+
+
+
+/* ======================
+		HEADLINE
+====================== */
+
 .headline {
     margin-bottom: 70px;
 }
@@ -77,3 +97,5 @@ h1 {
 #AmadInHeadline {
     font-weight: 600;
 }
+
+
