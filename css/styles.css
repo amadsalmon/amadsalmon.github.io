@@ -70,6 +70,31 @@ a {
 	border-bottom: black 1px solid;
 }
 
+.topnav-toggle_button {
+	display: none;
+}
+
+@media screen and (max-width : 650px) {
+	.h1 {
+		margin-top: 5vh;
+	}
+	#headline {
+		margin-top: 10vh;
+		padding-top: 1.5vh;
+	}
+	.topnav-items {
+		display: none;
+	}
+	
+	.topnav-items.active {
+		display: flex;
+	}
+	
+	.topnav-toggle_button {
+		display: flex;
+		float: right
+	}
+}
 
 
 
