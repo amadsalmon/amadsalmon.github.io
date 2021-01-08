@@ -12,6 +12,10 @@ body {
 	padding-right: 3vh;
 }
 
+a {
+	color: black;
+}
+
 /* Style the top navigation */
 .topnav {
 	padding-top: 1vh;
