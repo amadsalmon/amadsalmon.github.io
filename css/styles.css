@@ -33,16 +33,21 @@ a {
 	padding-top: 1.8vh;
     font-size: 1rem;
 	padding-bottom: 15px;
+	
+	position: fixed; /* Set the navbar to fixed position */
+	width: 100%;
+  	top: 0; /* Position the navbar at the top of the page */
 }
 
 #topnav-AmadSalmon {
-	margin-right: 40px;
+	margin-right: 5vh;
 	float: left;
 
 }
 
 .topnav-items {
 	float: right;
+	margin-right: 5vh;
 }
 
 /* Style the links inside the navigation bar */
@@ -76,6 +81,7 @@ a {
 .toggleMenuButton{
 	display: none;
   	cursor: pointer;
+	margin-right: 6vh;
 }
 
 .toggleMenuButton span
