@@ -69,11 +69,7 @@ a {
 	padding: 15px 15px;
 	text-decoration: none;
 	color: black;
-}
-
-.topnav-items a:hover {
-	border-bottom: black 1px solid;
-	transition: width 0.5s ease 0s, left 0.3s ease 0s;
+	position: relative;
 }
 
 /* Add a color to the active/current link */
@@ -82,25 +78,35 @@ a {
 	border-bottom: black 1px solid;
 }
 
-/*
-.topnav-items a::after {    
-	background: none repeat scroll 0 0 transparent;
-	bottom: 0;
+.topnav-items a::after, .topnav-items a::before {    
 	content: "";
-	display: block;
-	height: 2px;
-	left: 50%;
 	position: absolute;
-	background: black;
+	bottom: -0.5px;
+	width: 0px;
+	height: 1px;
+	margin: 0px 0 0;
 	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	width: 0;
+	opacity: 0;
+	background-color: black;
 }
 
-.topnav-items a:hover::after { 
-  	width: 100%; 
-  	left: 0; 
+.topnav-items a::after {    
+	right: 50%;
 }
-*/
+
+.topnav-items a::before {    
+	left: 50%;
+}
+
+.topnav-items a:not(.active):hover::after { 
+  	width: 50%; 
+	opacity: 1;
+}
+.topnav-items a:not(.active):hover::before { 
+  	width: 50%; 
+	opacity: 1;
+}
+
 
 /*  *****
  * Three-bar menu button
