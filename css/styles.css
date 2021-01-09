@@ -214,6 +214,40 @@ h2 {
 
 h2:target {}
 
+h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding-left: 2vh;
+	text-transform: uppercase;
+}
+
+.skills{
+	display: flex;
+	flex-flow: wrap;
+	align-content: space-evenly;
+	align-items: stretch;
+}
+
+.skill {
+	margin: 40px 40px;
+}
+
+.skill_name {
+	text-align: center;
+	font-weight: 600;
+}
+
+.skill ul {
+	padding-left: 0;
+}
+
+.skill ul li {
+	list-style: none;
+	text-align: center;
+}
+
+
+
 
 .notSelectable {
 	-webkit-touch-callout: none;
