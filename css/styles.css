@@ -195,8 +195,10 @@ h1 {
 }
 
 h2 {
+	font-size: 1.8rem;
 	font-weight: 600;
 	padding-left: 2vh;
+	text-transform: uppercase;
 }
 
 h2:target {}
