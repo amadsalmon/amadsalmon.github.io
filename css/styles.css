@@ -64,22 +64,36 @@ a {
     color: black;
 }
 
-.topnav-items a::hover {
-    transition: width .3s;
-}
-
-/* Change the color of links on hover */
-.topnav-items a:hover::before, .topnav-items a:hover::after {
-    color: black;
+.topnav-items a:hover { 
 	border-bottom: black 1px solid;
-	transition: width .3s;
+	transition: width 0.5s ease 0s, left 0.3s ease 0s;
 }
 
 /* Add a color to the active/current link */
 .topnav-items a.active {
-    color: black;
+	color: black;
 	border-bottom: black 1px solid;
 }
+
+/*
+.topnav-items a::after {    
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: black;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.topnav-items a:hover::after { 
+  	width: 100%; 
+  	left: 0; 
+}
+*/
 
 /*  *****
  * Three-bar menu button
