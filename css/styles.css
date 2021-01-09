@@ -53,6 +53,7 @@ a {
 .topnav-items {
 	float: right;
 	margin-right: 5vh;
+	text-transform: uppercase;
 }
 
 /* Style the links inside the navigation bar */
