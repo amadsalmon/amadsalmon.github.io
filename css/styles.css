@@ -45,9 +45,16 @@ a {
 }
 
 #topnav-AmadSalmon {
+	font-size: 1rem;
 	margin-right: 5vh;
 	float: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
 
+#topnav-AmadSalmon a {
+	text-decoration: none;
 }
 
 .topnav-items {
