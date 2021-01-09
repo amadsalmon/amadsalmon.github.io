@@ -39,11 +39,9 @@ a {
 	padding-bottom: 15px;
 	padding-left: 2vh;
 
-	position: fixed;
-	/* Set the navbar to fixed position */
+	position: fixed; /* Set the navbar to fixed position */
 	width: 100%;
-	top: 0;
-	/* Position the navbar at the top of the page */
+	top: 0; /* Position the navbar at the top of the page */
 }
 
 #topnav-AmadSalmon {
