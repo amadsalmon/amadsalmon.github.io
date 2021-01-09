@@ -9,4 +9,5 @@ function toggleActiveClassOntoggleMenuButton() {
 
 function toggleMenuButtonClicked(){
 	toggleActiveClassOntoggleMenuButton();
+	topNavItems.classList.toggle("responsive");
 }
