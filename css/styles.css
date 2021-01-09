@@ -190,7 +190,7 @@ a {
 		transition: transform 0.3s ease-in;
 	}
 
-	.topnav-items.responsive {
+	.topnav-items.active {
 		transform: translateX(0%);
 	}
 
