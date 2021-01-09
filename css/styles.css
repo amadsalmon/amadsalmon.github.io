@@ -180,6 +180,14 @@ h1 {
     font-weight: 600;
 }
 
+h2 {
+	font-weight: 600;
+	padding-left: 2vh;
+}
+
+h2:target {
+      
+}
 
 
 .notSelectable {
