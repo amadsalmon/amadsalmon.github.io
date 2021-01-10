@@ -22,6 +22,7 @@ function topNavItemLinkClicked(){
 	/* Make topNavItems disappear when clicking on one of its links. */
 	if (topNavItems.classList.contains("active")){
 			topNavItems.classList.remove("active");
+			toggleButton.classList.remove("active");
 	}
 	
 	/* Give underline to correct topnav item */
