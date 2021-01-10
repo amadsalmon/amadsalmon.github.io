@@ -237,7 +237,14 @@ h2 {
 	text-transform: uppercase;
 }
 
-h2:target {}
+/* Offset anchoring to adjust to targeted header */
+h2:target::before {
+  content: '';
+  display: block;
+  height:      70px;
+  margin-top: -70px;
+  visibility: hidden;
+}
 
 h3 {
 	font-size: 1.1rem;
