@@ -34,18 +34,20 @@ a {
 .topnav {
 	background-color: white;
 	font-size: 1rem;
-	
+
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	align-items: center;
-	
+
 	min-height: 7vh;
 	width: 100%;
 	z-index: 100;
 	padding-left: 2vh;
-	position: fixed; /* Set the navbar to fixed position */
-	top: 0; /* Position the navbar at the top of the page */
+	position: fixed;
+	/* Set the navbar to fixed position */
+	top: 0;
+	/* Position the navbar at the top of the page */
 }
 
 #topnav-AmadSalmon {
@@ -54,7 +56,7 @@ a {
 	float: left;
 	text-decoration: none;
 	text-transform: uppercase;
-	
+
 }
 
 #topnav-AmadSalmon a {
@@ -63,8 +65,8 @@ a {
 
 .topnav-items {
 	text-transform: uppercase;
-	
-	margin-right: 5vh;	
+
+	margin-right: 5vh;
 	display: flex;
 	justify-content: space-around;
 }
@@ -93,7 +95,8 @@ a {
 	border-bottom: black 1px solid;
 }
 
-.topnav-items a::after, .topnav-items a::before {    
+.topnav-items a::after,
+.topnav-items a::before {
 	content: "";
 	position: absolute;
 	bottom: -0.5px;
@@ -105,20 +108,21 @@ a {
 	background-color: black;
 }
 
-.topnav-items a::after {    
+.topnav-items a::after {
 	right: 50%;
 }
 
-.topnav-items a::before {    
+.topnav-items a::before {
 	left: 50%;
 }
 
-.topnav-items a:not(.active):hover::after { 
-  	width: 50%; 
+.topnav-items a:not(.active):hover::after {
+	width: 50%;
 	opacity: 1;
 }
-.topnav-items a:not(.active):hover::before { 
-  	width: 50%; 
+
+.topnav-items a:not(.active):hover::before {
+	width: 50%;
 	opacity: 1;
 }
 
@@ -174,11 +178,11 @@ a {
 		margin-top: 10vh;
 		padding-top: 1.5vh;
 	}
-	
+
 	#topnav-AmadSalmon {
 		font-size: 1.4rem;
 	}
-	
+
 	.topnav-items {
 		border-top: black 2px solid;
 		background-color: white;
@@ -186,10 +190,10 @@ a {
 		right: 0px;
 		width: 50%;
 		height: 30vh;
-		top: 5vh; 
+		top: 5vh;
 		display: flex;
 		flex-direction: column;
-		align-items:flex-end;
+		align-items: flex-end;
 		transform: translateX(110%);
 		transition: transform 0.3s ease-in;
 	}
@@ -252,11 +256,11 @@ h2 {
 
 /* Offset anchoring to adjust to targeted header */
 h2:target::before {
-  content: '';
-  display: block;
-  height:      70px;
-  margin-top: -70px;
-  visibility: hidden;
+	content: '';
+	display: block;
+	height: 70px;
+	margin-top: -70px;
+	visibility: hidden;
 }
 
 h3 {
@@ -266,7 +270,7 @@ h3 {
 	text-transform: uppercase;
 }
 
-.skills{
+.skills {
 	display: flex;
 	flex-flow: wrap;
 	align-content: flex-start;
@@ -278,7 +282,7 @@ h3 {
 }
 
 .skill_name {
-	text-align:left;
+	text-align: left;
 	font-weight: 600;
 }
 
