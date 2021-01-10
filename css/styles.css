@@ -293,8 +293,22 @@ h3 {
 .skill ul li {
 	list-style: none;
 	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 3vh;
+	;
 }
 
+.skill a {
+	text-decoration: none;
+	margin-right: 1.5vh;
+}
+
+.skill img {
+	height: 50px;
+	width: 50px;
+}
 
 
 
