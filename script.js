@@ -1,3 +1,4 @@
+var topNavBar = document.querySelector(".topnav");
 var toggleButton = document.getElementById("toggleMenuButton");
 var topNavItems = document.querySelector(".topnav-items");
 var activeTopNavItem = document.querySelector(".topnav-items a.active");
@@ -8,6 +9,8 @@ document.querySelectorAll('.topnav-items a').forEach(
 	item => { 
 		item.addEventListener('click', topNavItemLinkClicked)
 	})
+
+window.addEventListener("scroll", windowScrolled);
 
 function toggleActiveClassOntoggleMenuButton() {
 	toggleButton.classList.toggle("active");
@@ -30,5 +33,14 @@ function topNavItemLinkClicked(){
 	this.classList.add("active");
 	activeTopNavItem = this;
 	
+}
+
+function windowScrolled() {
+	/* Add bottom border to nav bar when page is scrolled down */
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+        topNavBar.style.borderBottom = "black 1px solid";
+    } else {
+       topNavBar.style.borderBottom = "";
+    }
 }
 
