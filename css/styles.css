@@ -269,7 +269,7 @@ h3 {
 .skills{
 	display: flex;
 	flex-flow: wrap;
-	align-content: space-evenly;
+	align-content: flex-start;
 	align-items: stretch;
 }
 
@@ -278,7 +278,7 @@ h3 {
 }
 
 .skill_name {
-	text-align: center;
+	text-align:left;
 	font-weight: 600;
 }
 
@@ -288,7 +288,7 @@ h3 {
 
 .skill ul li {
 	list-style: none;
-	text-align: center;
+	text-align: left;
 }
 
 
