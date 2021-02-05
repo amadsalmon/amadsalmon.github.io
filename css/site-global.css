@@ -210,10 +210,11 @@ a {
         flex-direction: column;
 		justify-content:flex-start;
         align-items: center;
-        transform: translateX(110%);
+        transform: translateX(100%);
         transition: transform 0.3s ease-in;
 		
 		padding-top: 3vh;
+		 margin-right: 0vh;
     }
 
     .topnav-items.active {
