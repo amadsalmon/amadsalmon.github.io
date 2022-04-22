@@ -5,15 +5,16 @@ body {
 
 .content {
     max-width: 700px;
-	margin: 10vh auto auto;
+	margin: 4rem auto auto;
 }
 
 h2 {
-    margin-top: 50px;
+    margin-top: 2em;
+    margin-bottom: .5em;
 }
 
 h3 {
-    margin-bottom: 5px;
+    margin-bottom: .25em;
 }
 
 h4 {
@@ -21,7 +22,7 @@ h4 {
     font-weight: normal;
 
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 1em;
 }
 
 .skill-title {
@@ -32,6 +33,21 @@ h4 {
     font-weight: bold;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid #006BBD7F;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(0, 107, 189, 0.32);
+}
+
 .two-columns {
     display: flex;
 }
@@ -40,13 +56,9 @@ h4 {
     flex: 50%;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-    border-bottom: 1px solid #6394c0;
-}
-
-a:visited {
-    color: inherit;
-    text-decoration: none;
+img.profile-photo{
+    height: 9em;
+    border-radius: 50%;
+    display: block;
+    margin: auto auto 4em;
 }
