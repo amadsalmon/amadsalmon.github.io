@@ -57,7 +57,7 @@ a:hover {
     flex: 50%;
 }
 
-img.profile-photo{
+#profile-picture{
     height: 9em;
     border-radius: 50%;
     display: block;

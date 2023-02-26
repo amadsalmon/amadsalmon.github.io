@@ -22,7 +22,7 @@
 <body>
 <div class="content">
 
-    <img src="profile_square.jpeg" class="profile-photo" alt="Profile photo">
+    <img src="" id="profile-picture" alt="Profile picture">
 
     <h1>Hi, I'm <span class="highlighted">Amad</span>.</h1>
 
@@ -73,5 +73,16 @@
 
 
 </div>
+<script>
+    /* Randomization of the profile picture selection */
+    const profilePicturesFolder = "profile-pictures"
+    const profilePicturesPrefix = "picture-"
+    const profilePicturesSuffix = ".jpg"
+    const pictureNumberMin = 1;
+    const pictureNumberMax = 9;
+    const chosenPictureNumber = Math.floor(Math.random() * (Math.floor(pictureNumberMax) - Math.ceil(pictureNumberMin) + 1)) + Math.ceil(pictureNumberMin);
+    const chosenPicturePath = profilePicturesFolder + '/' + profilePicturesPrefix + chosenPictureNumber + profilePicturesSuffix
+    document.getElementById("profile-picture").src = chosenPicturePath
+</script>
 </body>
 </html>
