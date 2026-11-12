@@ -1,96 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Amad Salmon</title>
-    <meta content="Amad Salmon" name="author">
-    <meta content="Software engineer and web developer. MSc Computer Science & Engineering" name=description>
-
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-          rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-
-    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="/site.webmanifest" rel="manifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amad Salmon</title>
+  <meta name="description" content="Amad Salmon - Software engineer at Amazon, based in Madrid.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="content">
-
-    <img src="" id="profile-picture" alt="Profile picture">
-
-    <h1>Hi, I'm <span class="highlighted">Amad</span>.</h1>
-
-    I'm a software engineer based in Barcelona 🌊. Currently working at Amazon. <br>
-    📫 Connect with me on <a href="https://www.linkedin.com/in/amadsalmon">LinkedIn</a>.
-
-    <h2>👨🏻‍💻 Work Experience</h2>
-
-    <h3>Software Development Engineer (SDE)</h3>
-    <h4><span class="bolder">Amazon</span> - Barcelona, Spain - Since November 2022 </h4>
-
-    <h3>Software Development Engineer (SDE) Intern</h3>
-    <h4><span class="bolder">Amazon</span> - Barcelona, Spain - April to August '21, and March to August '22 </h4>
-
-    <h3>Digital consultant</h3>
-    <h4><span class="bolder">HRH Joaillerie</span> - Monte-Carlo, Monaco - March 2019 to June 2020 </h4>
-
-    <h2>📚 Education</h2>
-
-    <h3>Master’s Degree in Computer Science</h3>
-    <h4>Polytechnic School of the University of Grenoble-Alpes, France — 2017 - 2022 </h4>
-
-    <h2>🛠 Skills</h2>
-    <span class="skill-title">Tech: </span>
-    React, Angular, Vue, Javascript, TypeScript, Python, Flask, PHP
-    <br>
-    <span class="skill-title">Soft Skills: </span>
-    Communication, Leadership, Detail Oriented, Problem Solving, Critical Thinking, Decision Making
-
-    <h2>🗣 Languages</h2>
-
-    <div class="two-columns">
-        <div class="column">
-            <h3>French 🇫🇷</h3>
-            Native speaker
-
-            <h3>Spanish 🇪🇸</h3>
-            Conversational
-        </div>
-        <div class="column">
-            <h3>English 🇬🇧🇺🇸</h3>
-            Fluent - C2 Proficient
-
-            <h3>Arabic 🇱🇧</h3>
-            Conversational
-        </div>
-    </div>
-
-
-</div>
-<script>
-    const profilePictureDom = document.getElementById("profile-picture")
-    function randomizeProfilePicture() {
-        /* Randomization of the profile picture selection */
-        const profilePicturesFolder = "profile-pictures"
-        const profilePicturesPrefix = "picture-"
-        const profilePicturesSuffix = ".jpg"
-        const pictureNumberMin = 1;
-        const pictureNumberMax = 9;
-        const chosenPictureNumber = Math.floor(Math.random() * (Math.floor(pictureNumberMax) - Math.ceil(pictureNumberMin) + 1)) + Math.ceil(pictureNumberMin);
-        const chosenPicturePath = profilePicturesFolder + '/' + profilePicturesPrefix + chosenPictureNumber + profilePicturesSuffix
-
-        profilePictureDom.src = chosenPicturePath
-    }
-
-    randomizeProfilePicture()
-
-    profilePictureDom.addEventListener("click", randomizeProfilePicture)
-</script>
+  <main>
+    <h1>Amad Salmon<span class="dot">.</span></h1>
+    <p>Software engineer at Amazon, based in Madrid.</p>
+    <p>Open source contributor to various projects, lately working on agentic AI orchestration: 30+ PRs on <a href="https://github.com/kirodotdev/KiroCrew">KiroCrew</a>.</p>
+    <nav>
+      <a href="https://github.com/amadsalmon">GitHub</a><span class="sep">&middot;</span><a href="https://www.linkedin.com/in/amadsalmon">LinkedIn</a>
+    </nav>
+  </main>
 </body>
 </html>
